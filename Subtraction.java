@@ -1,28 +1,32 @@
+
 import java.util.*;
 import java.io.*;
-public class Addition {
-Scanner sc=new Scanner(System.in); 
- String s;
-	double a;
-	double b;
+public class Subtraction {
+	
+Scanner sc=new Scanner(System.in);
+String s;
+double a;
+double b;
 void get(){
 System.out.println("Enter 2 numbers");
-	
+
 a=sc.nextDouble();
 b=sc.nextDouble();
-add(a,b);
+sub(a,b);
 
 }
- 
-	 double add(double a,double b) {
-		 
+
+
+	 double sub(double a,double b) {
+		
 		double result;
-		result=a+b;
+		result=a-b;
+		
 		//s=result+"="+a+"+"+b;
-		s=a+"+"+b+"="+result;
+		s=a+"-"+b+"="+result;
 		System.out.println(result);
 		//System.out.println(s);
-return result;
+		return result;
 	}
 	 String save()
 	 {
